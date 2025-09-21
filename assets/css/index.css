@@ -113,9 +113,19 @@ header a:hover{
 }
 #Quienes-somos{
   background-color: rgba(62, 139, 52, 0.4);
-  color: rgb(250, 250, 250);
+  color: black;
   text-align: center;
 }
 #Quienes-somos .container{
   padding: 50px 100px;
+}
+header .container{
+  flex-direction: row;
+  justify-content: space-between;
+}
+header nav{
+  flex-direction: row;
+  padding-bottom: 0;
+  padding-right: 20px;
+
 }
