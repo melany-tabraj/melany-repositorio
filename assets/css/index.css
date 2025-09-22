@@ -380,6 +380,36 @@ header nav{
     gap: 10px;
   }
 }
+@media (max-width: 700px) {
+  #caracteristicas .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    padding: 32px 8px;
+    text-align: center;
+  }
+  .caracteristicas-img {
+    max-width: 180px;
+    margin-bottom: 12px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #caracteristicas ul {
+    font-size: 1em;
+    gap: 10px;
+    margin-left: 0 !important;
+    padding: 0;
+    text-align: left;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  #caracteristicas li {
+    word-break: break-word;
+    font-size: 1em;
+    padding: 10px 10px;
+  }
+}
 #final{
   display: flex;
   flex-direction: column;

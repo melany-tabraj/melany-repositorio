@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tu historia gamer</title>
+  <link rel="stylesheet" href="../css/index.css">
+  <style>
+    body {
+      background: linear-gradient(rgba(255,255,255,0.85),rgba(255,255,255,0.85)), url('../img/descarga (25).jpeg') no-repeat center center fixed;
+      background-size: cover;
+    }
+    .form-container {
+      max-width: 480px;
+      margin: 60px auto;
+      background: #eafbe6;
+      border-radius: 18px;
+      box-shadow: 0 4px 16px rgba(14,109,25,0.13);
+      padding: 36px 28px;
+      color: #0e6d19;
+      font-family: 'Segoe UI', cursive, Arial, sans-serif;
+    }
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 18px;
+      font-family: 'Pacifico', cursive;
+      color: #227a21;
+    }
+    .form-container label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 500;
+    }
+    .form-container input, .form-container textarea, .form-container select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 16px;
+      border-radius: 8px;
+      border: 1.5px solid #0e6d19;
+      font-size: 1em;
+      font-family: inherit;
+    }
+    .form-container button {
+      width: 100%;
+      padding: 10px;
+      background: #0e6d19;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.1em;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.2s;
+    }
+    .form-container button:hover {
+      background: #227a21;
+    }
+  </style>
+</head>
+<body style="background: linear-gradient(rgba(255,255,255,0.85),rgba(255,255,255,0.85)), url('../img/descarga (26).jpeg') no-repeat center center fixed; background-size: cover;">
+  <div class="form-container">
+    <h2>¿Cómo empezó tu historia gamer?</h2>
+    <form action="#" method="post">
+      <label for="primer-juego">¿Cuál fue el primer videojuego que jugaste?</label>
+      <input type="text" id="primer-juego" name="primer-juego" placeholder="Ej: Mario Bros, Tetris..." required>
+
+      <label for="quien">¿Quién te lo mostró o cómo lo descubriste?</label>
+      <input type="text" id="quien" name="quien" placeholder="Ej: Mi hermano, un amigo, lo vi en YouTube..." required>
+
+      <label for="edad-inicio">¿A qué edad empezaste a jugar?</label>
+      <input type="number" id="edad-inicio" name="edad-inicio" min="3" max="50" required>
+
+      <label for="sentimiento">¿Qué sentiste la primera vez que jugaste?</label>
+      <textarea id="sentimiento" name="sentimiento" rows="2" placeholder="Ej: Emoción, nervios, diversión..."></textarea>
+
+      <label for="anecdota">¿Tienes alguna anécdota divertida o especial de tus inicios?</label>
+      <textarea id="anecdota" name="anecdota" rows="3" placeholder="¡Cuéntanos tu mejor recuerdo gamer!"></textarea>
+
+      <button type="submit">Compartir mi historia</button>
+    </form>
+    <div style="text-align:center; margin-top:18px;">
+      <a href="../../index.html" style="color:#0e6d19; text-decoration:underline; font-weight:bold;">Volver a la página principal</a>
+    </div>
+  </div>
+</body>
+</html>

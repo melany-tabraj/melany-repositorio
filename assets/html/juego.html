@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juegos GameZone</title>
+  <link rel="stylesheet" href="../css/index.css">
+  <style>
+    body {
+      background: linear-gradient(rgba(255,255,255,0.92),rgba(255,255,255,0.92)), url('../img/descarga (24).jpeg') no-repeat center center fixed;
+      background-size: cover;
+    }
+    .juegos-container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 24px;
+      background: #eafbe6cc;
+      border-radius: 18px;
+      box-shadow: 0 4px 16px rgba(14,109,25,0.13);
+    }
+    .juegos-titulo {
+      text-align: center;
+      color: #0e6d19;
+      font-size: 2.3em;
+      margin-bottom: 18px;
+      font-family: 'Pacifico', cursive;
+    }
+    .juegos-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      justify-content: center;
+    }
+    .juego-card {
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 2px 8px rgba(14,109,25,0.10);
+      width: 220px;
+      padding: 18px 12px;
+      text-align: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .juego-card:hover {
+      transform: translateY(-6px) scale(1.04);
+      box-shadow: 0 8px 24px rgba(14,109,25,0.18);
+    }
+    .juego-card img {
+      width: 90px;
+      height: 90px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+    .juego-card h3 {
+      font-size: 1.2em;
+      color: #227a21;
+      margin-bottom: 8px;
+    }
+    .juego-card p {
+      font-size: 0.98em;
+      color: #0e6d19;
+      margin-bottom: 8px;
+    }
+    @media (max-width: 700px) {
+      .juegos-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+      .juego-card {
+        width: 90vw;
+        max-width: 320px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="juegos-container">
+    <h1 class="juegos-titulo">Juegos para todos los gustos</h1>
+    <div class="juegos-grid">
+      <div class="juego-card">
+        <img src="../img/descarga (24).jpeg" alt="Juego de acción">
+        <h3>Acción</h3>
+        <p>Disfruta de los mejores juegos llenos de adrenalina y desafíos.</p>
+      </div>
+      <div class="juego-card">
+        <img src="../img/descarga (25).jpeg" alt="Juego de aventura">
+        <h3>Aventura</h3>
+        <p>Explora mundos increíbles y vive historias épicas.</p>
+      </div>
+      <div class="juego-card">
+        <img src="../img/descarga (26).jpeg" alt="Juego de deportes">
+        <h3>Deportes</h3>
+        <p>Compite en fútbol, basket, carreras y mucho más.</p>
+      </div>
+      <div class="juego-card">
+        <img src="../img/descarga (27).jpeg" alt="Juego de estrategia">
+        <h3>Estrategia</h3>
+        <p>Pon a prueba tu mente y tu lógica con juegos de pensar.</p>
+      </div>
+      <div class="juego-card">
+        <img src="../img/descarga (24).jpeg" alt="Juego multijugador">
+        <h3>Multijugador</h3>
+        <p>Juega online con amigos y conoce nuevos gamers.</p>
+      </div>
+      <!-- Puedes agregar más tarjetas de juegos aquí -->
+    </div>
+  </div>
+  <div style="text-align:center; margin-top:18px;">
+    <a href="../../index.html" style="color:#0e6d19; text-decoration:underline; font-weight:bold;">Volver a la página principal</a>
+  </div>
+</body>
+</html>
