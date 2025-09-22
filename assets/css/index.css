@@ -1,3 +1,31 @@
+@media (max-width: 600px) {
+  .logo-box {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 0;
+    gap: 0;
+  }
+  .logo-img {
+    width: 48px;
+    height: 48px;
+    margin: 0;
+  }
+  header .logo {
+    font-size: 1em;
+    margin: 0 0 0 3px;
+    text-align: left;
+  }
+}
+.logo-box {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 3px;
+  margin-left: 20px;
+  padding: 8px 0;
+}
 * {
   box-sizing: border-box;
 }
@@ -59,11 +87,23 @@ header{
 
 header .logo{
   margin: 0;
-  padding: 25px 30px;
+  padding: 10px 30px 0 30px;
   font-weight: bold;
   color: #0d721c;
-  font-size: 1.50em;
+  font-size: 1.7em;
+  letter-spacing: 1px;
+  text-align: center;
 }
+
+.logo-img {
+  display: block;
+    width: 75px;
+    height: 75px;
+  object-fit: contain;
+  margin: 0;
+
+}
+
 header .container{
   display: flex;
   flex-direction: column;
@@ -109,9 +149,10 @@ header a:hover{
 #somos-proya .container{
  
   text-align: center;
- padding: 200px 200px;
+ padding: 200px 12px;
 
 }
+
 #Quienes-somos{
   background-color: rgba(62, 139, 52, 0.4);
   color: black;
@@ -129,4 +170,7 @@ header nav{
   padding-bottom: 0;
   padding-right: 20px;
 
+}
+#nuestros-programas{
+  background-color: rgba(0,0,0,0.5);
 }
